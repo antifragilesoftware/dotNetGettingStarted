@@ -1,0 +1,16 @@
+scenario NewDotNetASPCoreProject should create a new project based on this archive
+
+let project_name = "my-project-name"
+
+given
+  Empty
+
+when
+  NewDotNetASPCoreProject
+
+then
+  fileExists ".gitignore"
+    and fileExists "Program.cs"
+    and fileExists "README.md"
+    and fileExists "Startup.cs"
+    and fileExists "project.json"

@@ -1,0 +1,19 @@
+---
+kind: "operation"
+client: "atomist"
+editor:
+  name: "ConvertExistingProjectToGenerator"
+  group: "atomist-rugs"
+  artifact: "rug-editors"
+  version: "0.13.0"
+  origin:
+    repo: "https://github.com/atomist-rugs/rug-editors.git"
+    branch: "8f7b8da48226325ba1e7f83520bc7436f9f0f792"
+    sha: "8f7b8da"
+  parameters:
+    - "archive_name": "donetgettingstarted"
+    - "group_id": "antifragilesoftware"
+    - "version": "0.1.0"
+    - "generator_name": "NewDotNetASPCoreProject"
+    - "description": "creates a new .NET Core ASP web project"
+
